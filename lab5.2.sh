@@ -1,21 +1,22 @@
+
 j=1
 while [ $j -lt 20 ]
 do
 i=2
 c=0
-while [ $j -le `expr $j / 2` ]
-do
-r =`expr $j % $i`
+while [ $j -le $((j/2)) ]
+do 
+r =$((j%i))
 if [ $r -eq 0 ]
-then
-c=`expr $c + 1`
+then 
+c=$((c+1))
 fi
-i=`expr $i + 1`
-done
+i=$((i+1))
+done 
 if [ $c -eq 0 ]
-then
+then 
 echo $j
 fi
-j=`expr $j + 1`
+j=`expr $j + 1 `
 done
 
