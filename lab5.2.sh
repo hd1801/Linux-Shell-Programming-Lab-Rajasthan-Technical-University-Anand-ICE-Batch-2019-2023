@@ -3,9 +3,9 @@ while [ $j -lt 20 ]
 do
 i=2
 c=0
-while [ $i -le `expr $j / 2` ]
+while [ $j -le `expr $j / 2` ]
 do
-r=`expr $j % $i`
+r =`expr $j % $i`
 if [ $r -eq 0 ]
 then
 c=`expr $c + 1`
@@ -18,3 +18,4 @@ echo $j
 fi
 j=`expr $j + 1`
 done
+
