@@ -17,4 +17,5 @@ case $d in
 ;;
 7) echo "Saturday"
 ;;
+*) echo "Not a valid no, Enter a no between 1 and 7."
 esac
