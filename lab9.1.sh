@@ -1,6 +1,7 @@
 #check no of even or no of odd digits 
 echo "enter n"
 read n
+n=$((10#$n))
 x=$n
 even=0
 odd=0
